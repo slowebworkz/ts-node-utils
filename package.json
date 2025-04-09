@@ -1,0 +1,30 @@
+{
+  "name": "@slowebworkz/ts-node-utils",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "eslint": "bunx eslint 'packages/**/*.{ts,tsx}'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "eslint": "^9.24.0",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "tscpaths": "^0.0.9",
+    "types-library": "git+https://github.com/slowebworkz/types-library.git#09b36a64f78c46d92a220422df2525fead69671b",
+    "typescript-eslint": "^8.29.1",
+    "vite": "^6.2.5"
+  },
+  "type": "module"
+}
