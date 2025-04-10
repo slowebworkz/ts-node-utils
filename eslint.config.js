@@ -9,14 +9,7 @@ export default tseslint.config(
   {
     rules: {
       // Enforce consistent type definitions — prefer interfaces
-      '@typescript-eslint/consistent-type-definitions': [
-        'error',
-        {
-          prefer: 'type-imports',
-          fixStyle: 'separate-type-imports',
-          allowTypeImports: true,
-        },
-      ],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 
       // Catch unused variables, especially in type declarations
       '@typescript-eslint/no-unused-vars': [
