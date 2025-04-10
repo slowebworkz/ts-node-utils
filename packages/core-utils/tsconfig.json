@@ -3,7 +3,7 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "dist",
-    "noEmit": false
+    "noEmit": true
   },
   "include": ["src", "index.ts"]
 }
