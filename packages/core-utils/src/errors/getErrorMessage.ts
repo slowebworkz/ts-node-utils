@@ -1,5 +1,7 @@
 // packages/core-utils/src/errors/getErrorMessage.ts
 
+import { isValidString } from '@core/index';
+
 /**
  * Extracts a readable message from an unknown error input.
  *
@@ -7,9 +9,9 @@
  * @returns A human-readable error message string.
  */
 export function getErrorMessage(err: unknown): string {
-  if (err instanceof Error && err?.message) {
+  if (err instanceof Error && isValidString(err?.message)) {
     return err.message;
-  } else if (typeof err === 'string') {
+  } else if (isValidString(err)) {
     return err;
   }
   return 'Unknown error';

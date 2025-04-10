@@ -1,8 +1,9 @@
 // packages/core-utils/src/errors/logError.ts
 
-const { console } = globalThis;
 
 import { getErrorMessage } from './getErrorMessage';
+
+const { console } = globalThis;
 
 /**
  * Logs a standardized error message to the console.

@@ -5,5 +5,7 @@
   },
   "files": [],
   "references": [
+    { "path": "./packages/core-utils" },
+    { "path": "./packages/file-utils" }
   ]
 }
