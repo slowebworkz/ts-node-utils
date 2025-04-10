@@ -2,22 +2,21 @@
 
 import { access } from 'node:fs/promises';
 
-import { isValidString, logError } from '@core/index';
+import { isValidString } from '../../../core-utils/index';
 
 /**
  * Attempts to access the file at the given path.
  * @param path The path to check.
  * @returns A boolean indicating whether the file exists.
  */
-export async function checkAccess(path: string): Promise<boolean> {
-  try {
-    if (isValidString(path)) {
-      await access(path);
-      return true;
+async function checkAccess(path: string): Promise<boolean> {
+  return new Promise<boolean>((resolve, reject) => {
+    if (!isValidString(path)) {
+      reject(false);
     }
-  } catch(err) {
-    logError(err);
-  }
 
-  return false;
+    access(path).then(() => resolve(true)).catch(() => reject(false))
+  });
 }
+
+export { checkAccess };
