@@ -37,7 +37,7 @@
   ],
   "private": true,
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "bun tsc && bun vite build",
     "eslint": "bunx eslint './**/*.{ts,tsx}'"
   },
   "type": "module",

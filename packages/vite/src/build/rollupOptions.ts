@@ -1,8 +1,6 @@
 // vite/build/rollupOptions.ts
 
-import {
-    assetFileNames, chunkFileNames, entryFileNames, inlineDynamicImports, name, preserveModules
-} from './constants';
+import { assetFileNames, chunkFileNames, entryFileNames, name } from './constants';
 
 import type { BuildEnvironmentOptions } from 'vite';
 
