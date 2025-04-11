@@ -1,0 +1,19 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true
+    },
+    "transform": {},
+    "target": "es2020",
+    "externalHelpers": true
+  },
+  "module": {
+    "type": "es6",
+    "strict": true,
+    "strictMode": true
+  },
+  "sourceMaps": true,
+  "minify": false
+}

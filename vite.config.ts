@@ -1,12 +1,13 @@
-// ./vite.config.ts
+// vite.config.ts
 
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
-import build from './vite/build';
-import esbuild from './vite/esbuild';
+import { build, esbuild } from './packages/vite/index'
 
 export default defineConfig({
-  plugins: [],
+  plugins: [
+    /* swcTransformPlugin() */
+  ],
   build,
   esbuild,
-});
+})

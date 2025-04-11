@@ -6,5 +6,5 @@
     "noEmit": false,
     "allowImportingTsExtensions": false
   },
-  "include": ["index.ts"]
+  "include": ["src", "index.ts"]
 }

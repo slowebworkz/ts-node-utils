@@ -15,6 +15,6 @@
     "verbatimModuleSyntax": true,            // Preserve module syntax in emitted code
     "noUncheckedIndexedAccess": true,       // Report errors on indexed access to arrays and tuples
   },
-  "include": ["**/*.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/dist"]
 }
