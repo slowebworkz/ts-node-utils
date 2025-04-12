@@ -1,0 +1,6 @@
+entrypoints = ["src/index.ts"]
+outdir = "dist"
+target = "node"
+minify = false
+sourcemap = "external"
+external = ["fs", "path", "os", "stream"] # optional node builtins

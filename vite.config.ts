@@ -1,12 +1,13 @@
 // vite.config.ts
 
-import { defineConfig } from 'vite'
-import nodeResolve from 'vite-plugin-resolve'
+import { defineConfig } from 'vite';
+import eslint from 'vite-plugin-eslint2';
+import nodeResolve from 'vite-plugin-resolve';
 
-import { build, esbuild } from './packages/vite/index'
+import { build, esbuild } from './vite/index';
 
 export default defineConfig({
-  plugins: [nodeResolve({})],
+  plugins: [nodeResolve({}), eslint()],
   build,
   esbuild,
   ssr: {

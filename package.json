@@ -7,7 +7,6 @@
     "@eslint/js": "^9.24.0",
     "@slowebworkz/core-utils": "workspace:*",
     "@slowebworkz/file-utils": "workspace:*",
-    "@slowebworkz/vite": "workspace:*",
     "@swc/core": "^1.11.18",
     "@types/bun": "latest",
     "@types/node": "latest",
@@ -21,6 +20,7 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1",
     "vite": "^6.2.6",
+    "vite-plugin-eslint2": "^5.0.3",
     "vite-plugin-resolve": "^2.5.2"
   },
   "peerDependencies": {
@@ -37,7 +37,7 @@
   ],
   "private": true,
   "scripts": {
-    "build": "bun tsc && bun vite build",
+    "build": "bun tsc && bunx vite build",
     "eslint": "bunx eslint './**/*.{ts,tsx}'"
   },
   "type": "module",

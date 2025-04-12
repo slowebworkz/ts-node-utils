@@ -6,5 +6,5 @@
  * @returns A boolean indicating whether the string is valid (non-empty and not just whitespace).
  */
 export function isValidString(str: unknown): str is string {
-  return typeof str === 'string' && str.trim().length > 0;
+  return typeof str === 'string' && str.trim().length > 0
 }

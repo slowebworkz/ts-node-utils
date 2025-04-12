@@ -6,5 +6,5 @@
     "noEmit": false,
     "allowImportingTsExtensions": false
   },
-  "include": ["src", "index.ts"]
+  "include": ["src", "index.ts", "../core-utils/src"]
 }

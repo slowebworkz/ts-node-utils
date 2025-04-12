@@ -10,9 +10,9 @@ import { isValidString } from '../utils/index';
  */
 export function getErrorMessage(err: unknown): string {
   if (err instanceof Error && isValidString(err?.message)) {
-    return err.message;
+    return err.message
   } else if (isValidString(err)) {
-    return err;
+    return err
   }
-  return 'Unknown error';
+  return 'Unknown error'
 }

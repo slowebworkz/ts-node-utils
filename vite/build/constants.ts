@@ -2,7 +2,9 @@
 
 export const name = 'utils' as const;
 
-export const target = 'esnext' as const;
+export const target = 'node18' as const;
+
+export const ssr = true as const;
 
 export const outDir = 'dist' as const;
 

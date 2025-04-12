@@ -1,9 +1,8 @@
 // packages/core-utils/src/errors/logError.ts
 
-
 import { getErrorMessage } from './getErrorMessage';
 
-const { console } = globalThis;
+const { console } = globalThis
 
 /**
  * Logs a standardized error message to the console.
@@ -11,6 +10,6 @@ const { console } = globalThis;
  * @param err - The error to log.
  */
 export function logError(err: unknown, prefix: string = `❌`): void {
-  const message = getErrorMessage(err);
-  console.warn(`${prefix} ${message}`);
+  const message = getErrorMessage(err)
+  console.warn(`${prefix} ${message}`)
 }

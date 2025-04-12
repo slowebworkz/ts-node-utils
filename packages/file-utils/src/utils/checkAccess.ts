@@ -11,11 +11,11 @@ import { logError } from '@slowebworkz/core-utils';
  */
 async function checkAccess(path: string): Promise<boolean> {
   try {
-    await access(path);
-    return true;
+    await access(path)
+    return true
   } catch (err) {
-    logError(err);
-    return false;
+    logError(err)
+    return false
   }
 }
 
