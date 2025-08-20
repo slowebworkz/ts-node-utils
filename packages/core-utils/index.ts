@@ -1,4 +1,4 @@
 // packages/core-utils/index.ts
 
-export * from './src/errors/index'
-export * from './src/utils/index'
+export * from 'core-utils/src/errors/index'
+export * from 'core-utils/src/utils/index'
