@@ -6,8 +6,6 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./*"],
-      "@core/*": ["./packages/core-utils/*"],
-      "@files/*": ["./packages/file-utils/*"]
     }
   }
 }
