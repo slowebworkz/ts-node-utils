@@ -1,6 +1,6 @@
-import { format, parse } from 'node:path';
+import { format, parse } from 'node:path'
 
-import { logError } from '@slowebworkz/core-utils';
+import { logError, getErrorMessage } from '@core/src/errors'
 
 import type { MinTwoCharString } from 'types-library'
 
@@ -14,7 +14,7 @@ export function toCommonJs<T extends string = MinTwoCharString>(
       return format({ ...parsed, base: undefined, ext: '.cjs' })
     }
   } catch (err) {
-    logError(err)
+    logError(`Error converting filename "${filename}": ${getErrorMessage(err)}`)
   }
 
   return filename

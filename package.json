@@ -1,31 +1,25 @@
 {
-  "name": "@slowebworkz/ts-node-utils",
+  "name": "ts-node-utils",
   "version": "0.1.0",
   "main": "dist/index.js",
   "devDependencies": {
     "@effective/prettier": "^0.2.1",
     "@eslint/js": "^9.24.0",
-    "@slowebworkz/core-utils": "workspace:*",
-    "@slowebworkz/file-utils": "workspace:*",
-    "@swc/core": "^1.11.18",
     "@types/bun": "latest",
+    "@types/minimatch": "^6.0.0",
     "@types/node": "latest",
+    "@types/prettier": "^3.0.0",
     "error-lib": "latest",
     "eslint-plugin-toml": "^0.12.0",
-    "prettier-eslint": "^16.3.0",
-    "terser": "^5.39.0",
-    "tscpaths": "^0.0.9",
     "tslib": "^2.8.1",
+    "tsup": "^8.5.0",
     "types-library": "git+https://github.com/slowebworkz/types-library.git#09b36a64f78c46d92a220422df2525fead69671b",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.29.1",
-    "vite": "^6.2.6",
-    "vite-plugin-eslint2": "^5.0.3",
-    "vite-plugin-resolve": "^2.5.2"
+    "typescript-eslint": "^8.29.1"
   },
   "peerDependencies": {
     "eslint": "^8.57.1",
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
   },
   "files": [
     "dist"
@@ -37,8 +31,9 @@
   ],
   "private": true,
   "scripts": {
-    "build": "bun tsc && bunx vite build",
-    "eslint": "bunx eslint './**/*.{ts,tsx}'"
+    "build": "bun run format && bunx tsup ./index.ts --dts",
+    "format": "bunx @effective/prettier --write './**/*.{ts,tsx,js,jsx}'",
+    "lint": "bunx eslint './**/*.{ts,tsx,js,jsx}'"
   },
   "type": "module",
   "types": "dist/index.d.ts",

@@ -1,5 +1,5 @@
 {
-  "name": "@slowebworkz/file-utils",
+  "name": "file-utils",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -10,9 +10,7 @@
   },
   "private": true,
   "scripts": {
-    "build": "bun tsc && bun vite build",
     "clean": "rm -rf dist",
-    "dev": "bun vite",
     "test": "bun test"
   },
   "keywords": [

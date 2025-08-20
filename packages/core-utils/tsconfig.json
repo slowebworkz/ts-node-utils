@@ -3,8 +3,7 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "dist",
-    "noEmit": false,
-    "allowImportingTsExtensions": false
+    "noEmit": false
   },
   "include": ["src", "index.ts"]
 }

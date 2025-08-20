@@ -1,6 +1,6 @@
 // packages/core-utils/src/errors/getErrorMessage.ts
 
-import { isValidString } from '../utils/index';
+import { isValidString } from '../utils/index'
 
 /**
  * Extracts a readable message from an unknown error input.

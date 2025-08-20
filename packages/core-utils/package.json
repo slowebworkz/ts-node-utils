@@ -1,25 +1,21 @@
 {
-  "name": "@slowebworkz/core-utils",
+  "name": "core-utils",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    "import": "./index.ts",
+    "import": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
   "private": true,
   "scripts": {
-    "build": "bun tsc && bun vite build",
+    "build": "bunx tsup src/utils/index.ts --dts",
     "clean": "rm -rf dist",
-    "dev": "bun vite",
     "test": "bun test"
   },
   "keywords": [
-    "game-core",
-    "engine",
-    "state-management",
-    "game-logic"
+    "core utilities"
   ],
   "type": "module",
   "engines": {

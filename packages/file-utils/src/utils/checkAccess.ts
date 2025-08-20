@@ -1,8 +1,8 @@
 // packages/file-utils/src/utils/checkAccess.ts
 
-import { access } from 'node:fs/promises';
+import { access } from 'node:fs/promises'
 
-import { logError } from '@slowebworkz/core-utils';
+import { logError, getErrorMessage } from '@core/src/errors'
 
 /**
  * Attempts to access the file at the given path.
@@ -14,7 +14,7 @@ async function checkAccess(path: string): Promise<boolean> {
     await access(path)
     return true
   } catch (err) {
-    logError(err)
+    logError(`Error accessing path "${path}": ${getErrorMessage(err)}`)
     return false
   }
 }
