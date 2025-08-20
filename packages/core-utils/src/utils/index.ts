@@ -1,3 +1,3 @@
 // packages/core-utils/src/utils/index.ts
 
-export * from './isValidString'
+export * from 'packages/core-utils/src/utils/isValidString'
