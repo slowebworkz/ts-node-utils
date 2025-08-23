@@ -12,10 +12,9 @@
     "error-lib": "latest",
     "eslint-plugin-toml": "^0.12.0",
     "minimatch": "^10.0.3",
-    "tsdown": "^0.14.1",
     "tslib": "^2.8.1",
     "types-library": "git+https://github.com/slowebworkz/types-library.git#09b36a64f78c46d92a220422df2525fead69671b",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.29.1"
   },
   "peerDependencies": {
@@ -32,7 +31,7 @@
   ],
   "private": true,
   "scripts": {
-    "build": "bunx tsdown",
+    "build": "bunx tsc -b",
     "format": "bunx @effective/prettier --config .prettierrc.toml --ignore-path .prettierignore --write 'src/**/*.{ts,tsx,js,jsx}' 'packages/**/*.{ts,tsx,js,jsx}'",
     "build:all": "bun run format && bun run src/build-all.ts",
     "lint": "bunx eslint './**/*.{ts,tsx,js,jsx}'"

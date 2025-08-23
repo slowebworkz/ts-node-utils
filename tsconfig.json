@@ -3,6 +3,9 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "baseUrl": ".",
+    "declaration": true,
+    "composite": true,
+    "outDir": "./dist"
   },
   "files": [],
   "references": [
