@@ -1,16 +1,16 @@
 {
-  "name": "core-utils",
+  "name": "@slowebworkz/core-utils",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     "import": "./dist/index.js",
+    "require": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
   "private": true,
   "scripts": {
-    "build": "bunx tsup src/utils/index.ts --dts",
     "clean": "rm -rf dist",
     "test": "bun test"
   },

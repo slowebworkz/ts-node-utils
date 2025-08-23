@@ -1,5 +1,5 @@
 import { defineConfig } from 'tsdown'
-import entryPoints from './src/getEntryPoints';
+import entryPoints from './src/getEntryPoints'
 
 export default defineConfig((options) => {
   return {

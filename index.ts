@@ -1,4 +1,4 @@
 // src/index.ts
 
-export * from './packages/core-utils/index'
-export * from './packages/file-utils/index'
+export * from './packages/core-utils/src/index'
+export * from './packages/file-utils/src/index'

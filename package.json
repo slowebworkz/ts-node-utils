@@ -11,8 +11,9 @@
     "@types/prettier": "^3.0.0",
     "error-lib": "latest",
     "eslint-plugin-toml": "^0.12.0",
+    "minimatch": "^10.0.3",
+    "tsdown": "^0.14.1",
     "tslib": "^2.8.1",
-    "tsup": "^8.5.0",
     "types-library": "git+https://github.com/slowebworkz/types-library.git#09b36a64f78c46d92a220422df2525fead69671b",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1"
@@ -31,8 +32,9 @@
   ],
   "private": true,
   "scripts": {
-    "build": "bun run format && bunx tsup ./index.ts --dts",
-    "format": "bunx @effective/prettier --write './**/*.{ts,tsx,js,jsx}'",
+    "build": "bunx tsdown",
+    "format": "bunx @effective/prettier --config .prettierrc.toml --ignore-path .prettierignore --write 'src/**/*.{ts,tsx,js,jsx}' 'packages/**/*.{ts,tsx,js,jsx}'",
+    "build:all": "bun run format && bun run src/build-all.ts",
     "lint": "bunx eslint './**/*.{ts,tsx,js,jsx}'"
   },
   "type": "module",

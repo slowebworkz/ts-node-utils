@@ -1,6 +1,6 @@
 // packages/core-utils/src/errors/logError.ts
 
-import { getErrorMessage } from 'core-utils/src/errors/getErrorMessage'
+import { getErrorMessage } from './getErrorMessage'
 
 const { console } = globalThis
 

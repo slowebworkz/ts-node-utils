@@ -14,4 +14,3 @@ const packageBuilds = packageNames.map(
 )
 
 await Promise.all(packageBuilds)
-
