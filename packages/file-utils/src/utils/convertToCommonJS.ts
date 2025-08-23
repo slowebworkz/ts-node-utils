@@ -1,6 +1,6 @@
 import { format, parse } from 'node:path'
 
-import { logError, getErrorMessage } from 'core-utils/src/errors'
+import { logError, getErrorMessage } from '@slowebworkz/core-utils'
 
 import type { MinTwoCharString } from 'types-library'
 

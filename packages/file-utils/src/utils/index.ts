@@ -1,4 +1,3 @@
 // packages/core-utils/src/utils/index.ts
-
-export * from 'file-utils/src/utils/checkAccess'
-export * from 'file-utils/src/utils/convertToCommonJS'
+export * from '@file-utils/utils/checkAccess.js'
+// export * from '@file-utils/utils/convertToCommonJS.js'

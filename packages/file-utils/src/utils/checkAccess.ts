@@ -2,7 +2,7 @@
 
 import { access } from 'node:fs/promises'
 
-import { logError, getErrorMessage } from "core-utils/src/errors"
+import { logError, getErrorMessage } from '@slowebworkz/core-utils'
 
 /**
  * Attempts to access the file at the given path.
